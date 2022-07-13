@@ -137,7 +137,8 @@ sectors = {
     'ZRX': 'DeFi',
     'renFIL': 'Infrastructure',
     'UNI-V2': 'DeFi',
-    'BPT': 'GameFi'
+    'BPT': 'GameFi',
+    'G-UNI': 'DeFi'
 }
 
 df['Utilization (%)'] = df['Total Borrow USD'] / df['TVL'] #calculate utilization rate
