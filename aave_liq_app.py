@@ -13,7 +13,9 @@ import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 
 st.set_page_config(page_title='AAVE v2 TVL, Yield & Utilization Dashboard', layout='centered')
-refresh = st_autorefresh(limit=1)
+
+#refresh max once per day
+refresh = st_autorefresh(interval=86400, limit=1)
 
 
 subgraph = 'https://api.thegraph.com/subgraphs/name/messari/aave-v2-ethereum'
