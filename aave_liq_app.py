@@ -10,8 +10,10 @@ import aiohttp
 import plotly.express as px
 import numpy as np
 import streamlit as st
+from streamlit_autorefresh import st_autorefresh
 
 st.set_page_config(page_title='AAVE v2 TVL, Yield & Utilization Dashboard', layout='centered')
+refresh = st_autorefresh(limit=1)
 
 
 subgraph = 'https://api.thegraph.com/subgraphs/name/messari/aave-v2-ethereum'
